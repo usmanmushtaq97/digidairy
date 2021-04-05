@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".app.Fragments.Home">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+          <com.smarteist.autoimageslider.SliderView
+              android:id="@+id/imageSlider"
+              android:padding="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              app:sliderAnimationDuration="600"
+              app:sliderAutoCycleDirection="back_and_forth"
+              app:sliderAutoCycleEnabled="true"
+              app:sliderIndicatorAnimationDuration="600"
+              app:sliderIndicatorGravity="center_horizontal|bottom"
+              app:sliderIndicatorMargin="15dp"
+              app:sliderIndicatorOrientation="horizontal"
+              app:sliderIndicatorPadding="3dp"
+              app:sliderIndicatorRadius="2dp"
+              app:sliderIndicatorSelectedColor="@color/green"
+              app:sliderIndicatorUnselectedColor="#FFF"
+              app:sliderScrollTimeInSec="1"
+              app:sliderStartAutoCycle="true" />
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+              android:orientation="horizontal">
+               <TextView
+                   android:id="@+id/textView2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginStart="26dp"
+                   android:layout_marginTop="-4dp"
+                   android:layout_marginBottom="7dp"
+                   android:text="Category"
+                   android:textColor="@color/black"
+                   android:textSize="20dp"
+                   android:textStyle="bold" />
+               <TextView
+                   android:id="@+id/viewall_id"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginTop="5dp"
+                   android:textSize="17sp"
+                   android:layout_marginEnd="39dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/green"
+                   android:layout_marginBottom="6dp"
+                   android:text="ViewAll" />
+          </RelativeLayout>
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/category_recycler_id"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+              android:orientation="horizontal">
+
+               <ImageView
+                   android:id="@+id/nearbyproduct"
+                   android:layout_width="35dp"
+                   android:layout_height="30dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginStart="11dp"
+                   android:layout_marginBottom="5dp"
+                   android:src="@drawable/ic_pin" />
+
+               <TextView
+                   android:id="@+id/nearbyffproduct"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginStart="53dp"
+                   android:layout_marginTop="0dp"
+                   android:layout_marginBottom="0dp"
+                   android:text="Recomended"
+                   android:textColor="@color/black"
+                   android:textSize="10dp"
+                   android:textStyle="bold" />
+               <TextView
+                   android:id="@+id/viewall_id_product"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginTop="5dp"
+                   android:textSize="15sp"
+                   android:layout_marginEnd="39dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/green"
+                   android:layout_marginBottom="6dp"
+                   android:text="ViewAll" />
+          </RelativeLayout>
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/product_recyclerview"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="20dp"/>
+     </LinearLayout>
+</ScrollView>

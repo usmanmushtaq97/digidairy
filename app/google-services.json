@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1058896663339",
+    "project_id": "muguri-9ce15",
+    "storage_bucket": "muguri-9ce15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058896663339:android:b3690f1fa2c78dbf26ab6e",
+        "android_client_info": {
+          "package_name": "com.tss.digidairy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058896663339-ov3v433jh1p3e27d2pc8n74afu3modml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIIFSAm-PAad2XmfDt2o9HIEgViYgXolU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058896663339-ov3v433jh1p3e27d2pc8n74afu3modml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
